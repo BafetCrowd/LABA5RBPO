@@ -1,0 +1,21 @@
+spring:
+  config:
+    import: "optional:file:.env[.properties]"
+  application:
+    name: "1бкс24066"
+  sql:
+    init:
+      mode: never
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+      accept-float-as-int: false
+
+server:
+  port: 8084
+  error:
+    include-message: never
+    include-stacktrace: never
+    include-binding-errors: never
+
+DB_URL: "jdbc:h2:file:./данные/театр"
